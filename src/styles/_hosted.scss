@@ -1,0 +1,52 @@
+@import "variables";
+
+.hosted {
+  width: 350px;
+  margin: 40px auto;
+  position: relative;
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $textColor;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 50px;
+  }
+
+  &__country {
+    color: $textColor;
+    font-size: 14px;
+    margin-top: 9px;
+  }
+
+  &__text {
+    color: $textColor;
+    font-size: 16px;
+    margin-top: 11px;
+  }
+  &__button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #118488;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: color 0.4s, background-color 0.4s;
+    &:hover {
+      background-color: #118488;
+      color: #fff;
+    }
+    &-link {
+      text-decoration: none;
+      color: #118488;
+      font-size: 16px;
+      text-align: center;
+      line-height: 50px;
+    }
+  }
+}

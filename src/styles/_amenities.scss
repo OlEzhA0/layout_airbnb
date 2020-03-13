@@ -1,0 +1,28 @@
+@import "variables";
+
+.amenities {
+  width: 350px;
+  margin: 40px auto;
+  position: relative;
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  &-title {
+    color: $textColor;
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 176px);
+    grid-row-gap: 13px;
+    grid-column-gap: 23px;
+    color: $textColor;
+    font-size: 16px;
+  }
+  &__host {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,48 @@
+@import "variables";
+
+.reviews {
+  width: 350px;
+  margin: 40px auto;
+  position: relative;
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  &__title {
+    color: $textColor;
+    font-size: 28px;
+    margin-bottom: 34px;
+  }
+  &__comment {
+
+    &-one {
+      display: flex;
+      &-img {
+        padding-right: 21px;
+        transition: transform 0.3s;
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+    &-name {
+      color: $textColor;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &-data {
+      color: $textColor;
+      font-size: 14px;
+    }
+    &-text {
+      color: $textColor;
+      font-size: 16px;
+    }
+  }
+}
+
+.first {
+  margin-top: 25px;
+}
