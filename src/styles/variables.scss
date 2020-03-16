@@ -1,0 +1,9 @@
+$widthOfDesktopContent: 901px;
+$textColor: #3d4e61;
+$defaultFontSize: 16px;
+$hoverColor: #7fa1c9;
+
+@mixin containerAlign {
+  width: $widthOfDesktopContent;
+  margin: 0 auto;
+}

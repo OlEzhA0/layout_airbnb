@@ -1,0 +1,96 @@
+@import "variables";
+
+.quiet {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+  }
+  &__title {
+    color: $textColor;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  &__entire {
+    font-size: $defaultFontSize;
+    color: #687c94;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    list-style-type: none;
+    color: $textColor;
+    font-size: $defaultFontSize;
+    margin: 17px 30px 28px 0;
+  }
+  &__description {
+    color: $textColor;
+    font-size: $defaultFontSize;
+  }
+  &__host {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 22px;
+    color: $textColor;
+    font-size: $defaultFontSize;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+  &__form {
+    width: 330px;
+    height: 319px;
+    background: #fff;
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      margin: 0 30px 16px;
+    }
+  }
+  &__price {
+    color: $textColor;
+    font-size: $defaultFontSize;
+    padding: 30px 0 39px 30px;
+  }
+  &__input {
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 270px;
+    height: 50px;
+
+    margin-bottom: 16px;
+    padding-left: 17px;
+    color: $textColor;
+    font-size: $defaultFontSize;
+  }
+  &__button {
+    margin-top: 23px;
+    width: 270px;
+    height: 50px;
+    background: #fd5c63;
+    border-radius: 4px;
+    border: 2px solid #fd5c63;
+    color: #fff;
+    font-size: $defaultFontSize;
+
+    transition: background 0.3s, color 0.3s;
+    &:hover {
+      background: #fff;
+      border: 2px solid #fd5c63;
+      color: #fd5c63;
+      cursor: pointer;
+    }
+  }
+}

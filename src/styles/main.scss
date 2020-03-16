@@ -1,7 +1,94 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
 
-body {
-  background: $c-gray;
+@import "_header";
+@import "variables";
+@import "_media";
+@import "_quiet";
+@import "_amenities";
+@import "_reviews";
+@import "_hosted";
+
+input {
+  outline: none;
+}
+
+body,
+h1,
+p,
+h2,
+h3,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+}
+
+.footer {
+  min-height: 213px;
+  margin-top: 70px;
+  background: #fff;
+  box-shadow: 0 -1px 0 #e1e7ed;
+  &__wrap {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+
+  }
+  &__title {
+    margin-top: 44px;
+    color: $textColor;
+    font-size: 16px;
+  }
+  &__airbnb {
+    margin-right: 250px;
+  }
+  &__discover {
+    margin-right: 250px;
+  }
+  &__nav {
+    margin-top: 20px;
+    &-item {
+      list-style-type: none;
+      margin: 4.5px 0;
+    }
+    &-link {
+      text-decoration: none;
+      color: $textColor;
+      font-size: 16px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hoverColor;
+      }
+    }
+  }
+  &__hosting &__nav-item:last-child {
+    margin-bottom: 30px;
+
+  }
+}
+
+@media (max-width: 902px) {
+  .footer__wrap {
+    flex-direction: column;
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .quiet,
+  .amenities,
+  .reviews,
+  .hosted {
+    width: 320px;
+  }
+  .footer__wrap {
+    margin: 0 auto;
+    width: 320px;
+  }
 }

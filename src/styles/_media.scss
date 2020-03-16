@@ -1,0 +1,64 @@
+@import "variables";
+
+@media (max-width: 902px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .quiet {
+    width: 490px;
+    margin: 0 auto;
+    &__wrap {
+      flex-direction: column;
+    }
+    &__host {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (min-width: 902px) {
+  .quiet {
+    width: 901px;
+    &__wrap {
+      width: 901px;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .amenities {
+    width: 901px;
+    margin-top: 40px;
+    &__wrap {
+      width: 901px;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .reviews {
+    width: 901px;
+    margin-top: 66px;
+    &__wrap {
+      width: 901px;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .hosted {
+    width: 901px;
+    margin-top: 66px;
+    &__wrap {
+      width: 901px;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+}
