@@ -1,7 +1,7 @@
 @import "variables";
 
 .quiet {
-  width: 350px;
+  width: 500px;
   margin: 0 auto;
   position: relative;
   &__wrap {
@@ -39,9 +39,9 @@
     font-size: $defaultFontSize;
     font-weight: bold;
     transition: color 0.3s;
+
     &:hover {
       color: $hoverColor;
-      text-decoration: underline;
     }
   }
   &__form {
@@ -90,6 +90,7 @@
       background: #fff;
       border: 2px solid #fd5c63;
       color: #fd5c63;
+      cursor: pointer;
     }
   }
 }

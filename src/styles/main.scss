@@ -12,6 +12,10 @@
 @import "_reviews";
 @import "_hosted";
 
+input {
+  outline: none;
+}
+
 body,
 h1,
 p,
@@ -58,14 +62,33 @@ ul {
       color: $textColor;
       font-size: 16px;
       transition: color 0.3s;
+
       &:hover {
-        color: #7fa1c9;
-        text-decoration: underline;
+        color: $hoverColor;
       }
     }
   }
   &__hosting &__nav-item:last-child {
     margin-bottom: 30px;
 
+  }
+}
+
+@media (max-width: 902px) {
+  .footer__wrap {
+    flex-direction: column;
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .quiet,
+  .amenities,
+  .reviews,
+  .hosted {
+    width: 320px;
+  }
+  .footer__wrap {
+    margin: 0 auto;
+    width: 320px;
   }
 }
